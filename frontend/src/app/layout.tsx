@@ -1,5 +1,10 @@
-import Navigation from '@/components/layout/Navigation'
+import type { Metadata } from 'next'
 import './globals.css'
+
+export const metadata: Metadata = {
+  title: 'Empower - Web Design Agency',
+  description: 'We create powerful websites that drive results for businesses across all industries.',
+}
 
 export default function RootLayout({
   children,
@@ -9,7 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-black">
-        <Navigation />
         {children}
       </body>
     </html>
