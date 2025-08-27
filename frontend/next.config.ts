@@ -1,10 +1,9 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
+  output: 'standalone',
   images: {
-    domains: ['localhost'],
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -12,9 +11,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  reactStrictMode: true,
   typescript: {
-    ignoreBuildErrors: false,
-  },
+    ignoreBuildErrors: false
+  }
 };
 
 export default nextConfig;
