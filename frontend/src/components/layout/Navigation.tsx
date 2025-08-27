@@ -45,8 +45,7 @@ const Navigation = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black">
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled 
           ? 'bg-black/95 backdrop-blur-md border-b border-purple-500/20 shadow-lg shadow-purple-500/10' 
           : 'bg-transparent'
@@ -136,14 +135,6 @@ const Navigation = () => {
           />
         )}
       </nav>
-
-      {/* Page content area with black background */}
-      <div className="pt-20">
-        <div className="min-h-screen bg-black">
-          {/* Content placeholder */}
-        </div>
-      </div>
-    </div>
   );
 };
 
