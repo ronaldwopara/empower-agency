@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower - Web & Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121824;
+            color: #e5e7eb;
+        }
+        .bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0.3;
+        }
+        .section-hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gradient-text {
+            background-image: linear-gradient(to right, #22d3ee, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-link:hover .nav-link-underline {
+            width: 100%;
+        }
+        .cta-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .cta-button .cta-bg {
+            transition: opacity 0.3s ease;
+        }
+        .cta-button:hover .cta-bg {
+            opacity: 1;
+        }
+        .cta-button:hover .cta-bg-inner {
+            background: transparent;
+        }
+        .cta-button:hover .cta-text {
+            color: #121824;
+        }
+    </style>
+</head>
+<body class="bg-[#121824]">
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0">
+                        <img src="empower-logo.png" alt="Empower - New Ideas" class="h-16 w-16">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="web-design.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group nav-link">
+                        Web Design
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 nav-link-underline transition-all duration-300"></span>
+                    </a>
+                    <a href="content-creation.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group nav-link">
+                        Content Creation
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 nav-link-underline transition-all duration-300"></span>
+                    </a>
+                    <a href="story-telling.html" class="text-gray-300 hover:text-cyan-400 px-3 py-2 text-sm font-medium transition-colors duration-300 relative group nav-link">
+                        Storytelling
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-purple-400 nav-link-underline transition-all duration-300"></span>
+                    </a>
+                    <a href="#" class="relative px-6 py-2 rounded-lg text-sm font-medium cta-button">
+                        <span class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-purple-500 opacity-80 cta-bg rounded-lg"></span>
+                        <span class="absolute inset-0.5 bg-[#121824] rounded-lg cta-bg-inner"></span>
+                        <span class="relative text-cyan-400 font-semibold cta-text">Contact Us</span>
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="web-design.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Web Design</a>
+                <a href="content-creation.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Content Creation</a>
+                <a href="story-telling.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Storytelling</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-hero">
+            <video autoplay muted loop class="bg-video">
+                <source src="https://cdn.pixabay.com/video/2024/02/11/199049-911802280_large.mp4" type="video/mp4">
+            </video>
+            <div class="text-center z-10 px-4">
+                <h1 class="text-6xl md:text-8xl font-bold gradient-text mb-4">EMPOWER</h1>
+                <h2 class="text-2xl md:text-3xl text-gray-300 mb-8">NEW IDEAS FOR YOUR BUSINESS</h2>
+                <p class="text-gray-400 text-lg mb-8 max-w-3xl mx-auto">We are a full-service web and marketing agency dedicated to bringing your vision to life. From stunning web design to compelling content and strategic storytelling, we empower your brand to connect with its audience.</p>
+            </div>
+        </section>
+
+        <section class="py-24 bg-[#121824]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Our Core Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                    
+                    <!-- Web Design Card -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-purple-500/20 shadow-lg">
+                        <div class="flex justify-center mb-4">
+                            <svg class="h-12 w-12 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Web Design</h3>
+                        <p class="text-gray-400 mb-6">Crafting beautiful, responsive, and user-friendly websites that convert visitors into customers.</p>
+                        <a href="web-design.html" class="font-semibold text-cyan-400 hover:text-cyan-300">Learn More &rarr;</a>
+                    </div>
+                    
+                    <!-- Content Creation Card -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-purple-500/20 shadow-lg">
+                         <div class="flex justify-center mb-4">
+                            <svg class="h-12 w-12 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Content Creation</h3>
+                        <p class="text-gray-400 mb-6">Producing high-quality video and photo content for events, products, and social media engagement.</p>
+                        <a href="content-creation.html" class="font-semibold text-cyan-400 hover:text-cyan-300">Learn More &rarr;</a>
+                    </div>
+
+                    <!-- Storytelling Card -->
+                    <div class="bg-gray-900/50 p-8 rounded-lg border border-purple-500/20 shadow-lg">
+                         <div class="flex justify-center mb-4">
+                           <svg class="h-12 w-12 text-cyan-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Storytelling</h3>
+                        <p class="text-gray-400 mb-6">Developing hook-based marketing strategies and compelling narratives that build brand loyalty.</p>
+                        <a href="story-telling.html" class="font-semibold text-cyan-400 hover:text-cyan-300">Learn More &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.getElementById('navbar');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.remove('bg-transparent');
+                    navbar.classList.add('bg-[#121824]/95', 'backdrop-blur-md', 'border-b', 'border-purple-500/20', 'shadow-lg', 'shadow-purple-500/10');
+                } else {
+                    navbar.classList.add('bg-transparent');
+                    navbar.classList.remove('bg-[#121824]/95', 'backdrop-blur-md', 'border-b', 'border-purple-500/20', 'shadow-lg', 'shadow-purple-500/10');
+                }
+            });
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
